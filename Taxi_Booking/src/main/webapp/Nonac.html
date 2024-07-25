@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Non AC Taxi</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("black-car-road-daytime.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+form {
+    width: 300px;
+    margin: 2em auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #0056b3;
+}</style>
+</head>
+<body>
+<header>
+    <h1>Taxi Booking System</h1>
+</header>
+<h2>Fill the Details</h2>
+<form action="Nonactaxi" method="post">
+    <label for="phoneno">Phone No:</label>
+    <input type="text" id="phoneno" name="phoneno" required><br>
+    <label for="amount">Amount:</label>
+    <select name="amount" id="amount">
+        <option value="1300">1300</option>
+        <option value="1400">1400</option>
+        <option value="1500">1500</option>
+        <option value="1700">1700</option>
+    </select>
+    <label for="time">Time:</label>
+    <select name="time" id="time">
+        <option value="5AM">5:00 AM</option>
+        <option value="6AM">6:00 AM</option>
+        <option value="7AM">7:00 AM</option>
+        <option value="8AM">8:00 AM</option>
+        <option value="9AM">9:00 AM</option>
+        <option value="10AM">10:00 AM</option>
+        <option value="11AM">11:00 AM</option>
+        <option value="12PM">12:00 PM</option>
+        <option value="1PM">1:00 PM</option>
+        <option value="2PM">2:00 PM</option>
+        <option value="3PM">3:00 PM</option>
+        <option value="4PM">4:00 PM</option>
+        <option value="5PM">5:00 PM</option>
+        <option value="6PM">6:00 PM</option>
+        <option value="7PM">7:00 PM</option>
+        <option value="8PM">8:00 PM</option>
+        <option value="9PM">9:00 PM</option>
+        <option value="10PM">10:00 PM</option>
+        <option value="11PM">11:00 PM</option>
+    </select>
+    <input type="submit" id="submit" name="submit">
+</form>
+</body>
+</html>
